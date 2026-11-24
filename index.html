@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HERBAL HOME ร้านค้าสมุนไพรและผลิตภัณฑ์จากธรรมชาติ">
+  <title>HERBAL HOME | สมุนไพรจากธรรมชาติ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">H</span><span>HERBAL HOME<small>NATURAL • SIMPLE • CARE</small></span></a>
+    <nav><a href="#products">สินค้า</a><a href="#story">เกี่ยวกับเรา</a><a href="#contact">ติดต่อ</a></nav>
+    <button class="cart-button" id="cartToggle">ตะกร้า <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">NATURAL HERBAL COLLECTION</p>
+        <h1>ความเรียบง่าย<br>จากธรรมชาติ</h1>
+        <p>เลือกสรรผลิตภัณฑ์สมุนไพรในชีวิตประจำวัน ด้วยความใส่ใจในทุกรายละเอียด</p>
+        <a class="primary-link" href="#products">เลือกชมสินค้า <span>↗</span></a>
+      </div>
+      <div class="hero-art">
+        <div class="sun"></div><div class="leaf leaf-one"></div><div class="leaf leaf-two"></div>
+        <div class="hero-stamp">HERBAL<br>HOME</div>
+      </div>
+    </section>
+
+    <section class="intro" id="story">
+      <p class="eyebrow">OUR PHILOSOPHY</p>
+      <h2>ดูแลตัวเองในแบบที่เรียบง่าย</h2>
+      <p>HERBAL HOME คัดสรรสินค้าสมุนไพรสำหรับการใช้งานทั่วไป<br>พร้อมข้อมูลสินค้าและรายละเอียดคำสั่งซื้อที่ตรวจสอบได้</p>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR PRODUCTS</p><h2>สินค้าของเรา</h2></div><p>เลือกสินค้าที่คุณสนใจ</p></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="promise">
+      <div><span>01</span><h3>คัดสรรอย่างใส่ใจ</h3><p>แสดงรายละเอียดสินค้าอย่างชัดเจน</p></div>
+      <div><span>02</span><h3>สั่งซื้อง่าย</h3><p>กรอกข้อมูลและส่งคำสั่งซื้อได้สะดวก</p></div>
+      <div><span>03</span><h3>ตรวจสอบออเดอร์</h3><p>จัดเตรียมรายการสินค้าเพื่อการจัดส่ง</p></div>
+    </section>
+  </main>
+
+  <footer id="contact"><div class="brand"><span class="brand-mark">H</span><span>HERBAL HOME<small>NATURAL • SIMPLE • CARE</small></span></div><p>เว็บไซต์ตัวอย่างเพื่อการศึกษา</p><p>© 2026 HERBAL HOME</p></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า">
+    <div class="drawer-head"><h2>ตะกร้าสินค้า</h2><button id="closeCart" aria-label="ปิด">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">ยังไม่มีสินค้าในตะกร้า</p></div>
+    <div class="cart-total"><span>ยอดรวม</span><strong id="cartTotal">฿0</strong></div>
+    <form id="checkoutForm" class="checkout-form">
+      <h3>ข้อมูลสำหรับจัดส่ง</h3>
+      <label>ชื่อ-นามสกุล<input name="customer" required placeholder="ชื่อผู้รับ"></label>
+      <label>เบอร์โทรศัพท์<input name="phone" required inputmode="tel" placeholder="08xxxxxxxx"></label>
+      <label>ที่อยู่จัดส่ง<textarea name="address" required rows="3" placeholder="บ้านเลขที่ ถนน ตำบล อำเภอ จังหวัด รหัสไปรษณีย์"></textarea></label>
+      <button class="primary-button" type="submit">ยืนยันคำสั่งซื้อ</button>
+      <p class="form-note">ข้อมูลตัวอย่างสำหรับงานเรียน โปรดอย่าใช้ข้อมูลส่วนตัวจริงบนเว็บไซต์สาธารณะ</p>
+      <p id="checkoutMessage" role="status"></p>
+    </form>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
