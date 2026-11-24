@@ -2,8 +2,8 @@
 const GOOGLE_SCRIPT_URL = ""; // ตัวอย่าง: https://script.google.com/macros/s/...../exec
 
 const products = [
-  {sku:"HB001",name:"ยาหม่องสมุนไพร",description:"ผลิตภัณฑ์สมุนไพรสำหรับใช้ภายนอก ขนาด 30 กรัม",price:89,image:"images/herbal-balm.svg"},
-  {sku:"HB002",name:"สบู่สมุนไพรตะไคร้",description:"สบู่สมุนไพรสำหรับทำความสะอาดผิว ขนาด 100 กรัม",price:69,image:"images/lemongrass-soap.svg"}
+  {sku:"HB001",name:"ยาหม่องสมุนไพร",description:"ผลิตภัณฑ์สมุนไพรสำหรับใช้ภายนอก ขนาด 30 กรัม",price:89,image:herbal-home},
+  {sku:"HB002",name:"สบู่สมุนไพรตะไคร้",description:"สบู่สมุนไพรสำหรับทำความสะอาดผิว ขนาด 100 กรัม",price:69,image:image:"HB002.jpg"}
 ];
 let cart = JSON.parse(localStorage.getItem("herbalCart") || "[]");
 const money = n => "฿" + Number(n).toLocaleString("th-TH");
